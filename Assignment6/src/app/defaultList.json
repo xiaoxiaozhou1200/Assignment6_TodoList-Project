@@ -1,0 +1,20 @@
+{
+  "list1": {
+    "title": "list1 title",
+    "todo": "default todo item",
+    "author": "author name",
+    "date": "10/20/2018"
+  },
+  "list2": {
+    "title": "list2 title",
+    "todo": "default todo item",
+    "author": "author name",
+    "date": "10/20/2018"
+  },
+  "list3": {
+    "title": "list3 title",
+    "todo": "default todo item",
+    "author": "author name",
+    "date": "10/20/2018"
+  }
+}
