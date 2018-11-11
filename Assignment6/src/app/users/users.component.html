@@ -1,22 +1,24 @@
 <h2>{{user.name}} 's Todolist</h2>
 <div id="myDIV" class="header">
-  <label>Title:
+  <label>
+    <p class="words">Titile:</p>
     <input  [(ngModel)]="newList.title" type="text" id="titleInput" placeholder="Title...">
   </label>
-  <label>Author Name:
+  <label>
+    <p class="words">Author Name:</p>
     <input [(ngModel)]="newList.author" type="text" id="authorInput" placeholder="Author Name...">
   </label>
   <button (click)="addNewList()" class="addBtn" id="addListBtn">Add TodoList</button>
 </div>
-<div *ngFor="let list of user.list">
-  <div>{{list.title}}</div>
-  <div>{{list.author}}</div>
-  <div>{{list.date}}</div>
+<div class="default_div" *ngFor="let list of user.list">
+  <div class="list_title">{{list.title}}</div>
+  <div class="list_author">{{list.author}}</div>
+  <div class="list_date">{{list.date}}</div>
   <label>
-    <input [(ngModel)]="list.tempNewTodo" type="text"></label><button (click)="addNewItem(list)">Add</button>
-  <ul>
+    <input class="input_field" [(ngModel)]="list.tempNewTodo" type="text"></label><button class="add_btn" (click)="addNewItem(list)">Add</button>
+  <ul class="todoUL">
     <li *ngFor="let item of list.todo">
-      <span>{{item}}</span><button (click)="delete(list, item)"> X </button>
+      <span class="list_ul">{{item}}</span><button class="close" (click)="delete(list, item)"> X </button>
     </li>
   </ul>
 </div>
