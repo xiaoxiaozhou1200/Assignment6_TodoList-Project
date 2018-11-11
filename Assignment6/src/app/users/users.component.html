@@ -9,9 +9,9 @@
   <button (click)="addNewList()" class="addBtn" id="addListBtn">Add TodoList</button>
 </div>
 <div *ngFor="let list of user.list">
-  <div>{{list.title}}</div>
-  <div>{{list.author}}</div>
-  <div>{{list.date}}</div>
+  <input value="{{list.title}}">
+  <input value="{{list.author}}">
+  <input value="{{list.date}}">
   <label>
     <input [(ngModel)]="list.tempNewTodo" type="text"></label><button (click)="addNewItem(list)">Add</button>
   <ul>
