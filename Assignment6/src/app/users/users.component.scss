@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+#myDIV{
+  background-color: gray;
+  width: 100%;
+
+  p{
+    color: white;
+    text-align: center;
+  }
+}
+.header {
+  background-color: black;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+#titleInput {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+#authorInput {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.add_btn {
+  margin-right: 20px;
+  padding: 10px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  &:hover {
+    background-color: #bbb;
+  }
+}
+.list_div{
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+.list_author{
+  margin-right:20px;
+  border: none;
+  border-radius: 0;
+  width: 25%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+.list_title{
+  margin-right: 45%;
+  border: none;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  font-size: 30px;
+  vertical-align:middle;
+  text-align:center
+}
+.list_date{
+  margin-right:20px;
+  border: none;
+  border-radius: 0;
+  width: 25%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+}
+.input_field{
+  margin: 0px;;
+  border: none;
+  border-radius: 0;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: black;
+}
+.list_ul{
+  float: left;
+  width: 98%;
+  color: black;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.addBtn {
+  margin-right: 20px;
+  padding: 10px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  &:hover {
+    background-color: #bbb;
+  }
+}
+.words{
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 12%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.todoUL{
+  margin: 0px;;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: black;
+
+}
+.default_div{
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 16px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:nth-child(odd){
+    background: #f9f9f9
+  }
+  &:hover{
+    background: #ddd
+  }
+}
+
+

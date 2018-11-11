@@ -1,0 +1,48 @@
+$first-title-background-color: rgb(0,0,0);
+$first-title-width: 100%;
+$first-title-font-color: rgb(255,255,255);
+$first-title-text-align: center;
+$first-title-margin-bottom: 0;
+$first-title-margin-top: 15px;
+$first-title-height: 50px;
+$nav-background-color: gray;
+$nav-height: 40px;
+$nav-width: 100%;
+$nav-margin: 0px 0px 10px 0px;
+$nav-a-color: rgb(255,255,255);
+$nav-a-font-weight: bold;
+$nav-a-margin-left: 20px;
+$nav-a-font-size: medium;
+
+.firstTitle{
+  background-color: $first-title-background-color;
+  width: $first-title-width;
+  color: $first-title-font-color;
+  text-align: $first-title-text-align;
+  margin-bottom: $first-title-margin-bottom;
+  margin-top: $first-title-margin-top;
+  height: $first-title-height;
+}
+.secondTitle{
+  @extend .firstTitle;
+}
+
+nav {
+  background-color: $nav-background-color;
+  height: $nav-height;
+  width: $nav-width;
+  margin: $nav-margin;
+  a {
+    color: $nav-a-color;
+    font-weight: $nav-a-font-weight;
+    margin-left: $nav-a-margin-left;
+    font-size: $nav-a-font-size;
+  }
+}
+
+.nav {
+  height: 10%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
