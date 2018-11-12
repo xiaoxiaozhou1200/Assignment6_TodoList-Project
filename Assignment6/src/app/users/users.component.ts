@@ -11,6 +11,7 @@ import { UserService } from '../user.service';
 export class UsersComponent implements OnInit {
 
   todoList:  TodoList[];
+  json: any;
   user: User;
   newList: TodoList = {
     title: '',
@@ -40,12 +41,10 @@ export class UsersComponent implements OnInit {
     const newuserList: TodoList = new TodoList();
     newuserList.title = this.newList.title.valueOf();
     newuserList.author = this.newList.author.valueOf();
+    newuserList.date = '11/20/2018';
     newuserList.tempNewTodo = '';
     newuserList.todo = this.newList.todo;
     this.user.list.push(newuserList);
-    console.log(this.usernewList);
-    console.log(this.newList);
-    console.log(this.user.list);
   }
   addNewItem(list: TodoList): void {
     list.todo.push(list.tempNewTodo);
@@ -56,6 +55,7 @@ export class UsersComponent implements OnInit {
     list.todo.splice(i, 1);
   }
   getList(): void {
-    this.userService.getList().subscribe(todoList => this.todoList = todoList);
+    this.userService.fetchUsersFromJson().subscribe(todoList => this.user.list = todoList);
+    // this.userService.getList().subscribe(tosoList => this.todoList = tosoList);
   }
 }

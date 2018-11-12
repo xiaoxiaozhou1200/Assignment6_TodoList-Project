@@ -1,4 +1,4 @@
-<h2>{{user.name}} 's Todolist</h2>
+<h2 class="secondTitle">{{user.name}} 's Todolist</h2>
 <div id="myDIV" class="header">
   <label>
     <p class="words">Titile:</p>
@@ -11,14 +11,17 @@
   <button (click)="addNewList()" class="addBtn" id="addListBtn">Add TodoList</button>
 </div>
 <div class="default_div" *ngFor="let list of user.list">
-  <div class="list_title">{{list.title}}</div>
-  <div class="list_author">{{list.author}}</div>
-  <div class="list_date">{{list.date}}</div>
+  <input class="list_title" value="{{list.title}}">
+  <input class="list_author" value="{{list.author}}">
+  <input class="list_date" value="{{list.date}}">
   <label>
-    <input class="input_field" [(ngModel)]="list.tempNewTodo" type="text"></label><button class="add_btn" (click)="addNewItem(list)">Add</button>
+    <input class="input_field" [(ngModel)]="list.tempNewTodo" type="text">
+  </label>
+  <button class="add_btn" (click)="addNewItem(list)">Add</button>
   <ul class="todoUL">
     <li *ngFor="let item of list.todo">
-      <span class="list_ul">{{item}}</span><button class="close" (click)="delete(list, item)"> X </button>
+      <span class="list_ul">{{item}}</span>
+      <span class="close" (click)="delete(list, item)"> X </span>
     </li>
   </ul>
 </div>
