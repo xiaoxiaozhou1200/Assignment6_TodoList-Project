@@ -25,11 +25,9 @@ to load
 the default value of json file.
 
 ### 2.3 Development Environment
-+ Languange: Typescript, Html, CSS.
++ Languange: Typescript, Html, SCSS.
 		
-+ Depandency: `Angular 7` for building whole web application frame, apply `ES6` features, such as 
-
-`module import/export`
++ Depandency: `Angular 7` for building whole web application frame, apply `ES6` features, such as  `module import/export`
 		
 + Development System: macOS.
 
