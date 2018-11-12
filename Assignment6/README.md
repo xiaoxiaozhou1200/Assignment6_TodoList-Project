@@ -1,27 +1,58 @@
-# Untitled
+# 6150--Angular 7--ToDoList
+---- 
+## 1 Author Information
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+Team name : ZY
 
-## Development server
+Team member : Ran Zhou, Wenhui Yang
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 2 Introduction of To Do List
+### 2.1 Idea of Whole Project
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3. It is a todoList app, users can view default todoList 
 
-## Code scaffolding
+and add new todo list by click `Add New todo List` button. Add new todo item by click `Add` and delete 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+items by click `x`.
+### 2.1 Idea of Data binding
+Convert data load from `json` file to the user's `todo list object` and bind the corresponding overwrite tags 
 
-## Build
+to display all the default todo lists.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### 2.2 Idea of Component Interaction
+Click the username field (“ZY” as example in this app) to route to the corresponding todolist component of user 
+to load 
 
-## Running unit tests
+the default value of json file.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 2.3 Development Environment
++ Languange: Typescript, Html, CSS.
+		
++ Depandency: `Angular 7` for building whole web application frame, apply `ES6` features, such as 
 
-## Running end-to-end tests
+`module import/export`
+		
++ Development System: macOS.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### 2.4 Tools
++ IntelliJ IDEA
 
-## Further help
++ Any Browsers 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 3 Instruction
+### 3.1 How to run project
++ You should have a browser on your computer, we recommand Safria or Chrome.
+
++ Open terminal to run the whole project.
+
+### 3.2	Steps
+
++ insert `terminal` / `cmd`
+
++ install node form website: 
+[https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/, "我是标题")
++ insert `npm install` to install all the dependencies
++ insert `ng serve` to make Angular Live Development Server is listening on localhost:4200
++ open browser on http://localhost:4200/
+               
+               
+  
