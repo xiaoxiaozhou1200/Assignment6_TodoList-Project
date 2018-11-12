@@ -13,25 +13,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 and add new todo list by click `Add New todo List` button. Add new todo item by click `Add` and delete 
 
 items by click `x`.
-### 2.1 Idea of Data binding
+### 2.2 Idea of Data binding
 Convert data load from `json` file to the user's `todo list object` and bind the corresponding overwrite tags 
 
 to display all the default todo lists.
 
-### 2.2 Idea of Component Interaction
+### 2.3 Idea of Component Interaction
 Click the username field (“ZY” as example in this app) to route to the corresponding todolist component of user 
 to load 
 
 the default value of json file.
 
-### 2.3 Development Environment
+### 2.4 Development Environment
 + Languange: Typescript, Html, SCSS.
 		
 + Depandency: `Angular 7` for building whole web application frame, apply `ES6` features, such as  `module import/export`
 		
 + Development System: macOS.
 
-### 2.4 Tools
+### 2.5 Tools
 + IntelliJ IDEA
 
 + Any Browsers 
