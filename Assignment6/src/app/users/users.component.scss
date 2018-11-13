@@ -1,43 +1,42 @@
+@import "./../../scss/common.scss";
+@import "./../../scss/mixin.scss";
+
 * {
   box-sizing: border-box;
 }
 #myDIV{
   background-color: gray;
-  width: 100%;
-
+  @include listwidth(100%);
   p{
     color: white;
-    text-align: center;
+    text-align: $text-align;
   }
 }
 .header {
-  background-color: black;
+  background-color: $header-background-color;
   padding: 30px 40px;
-  color: white;
-  text-align: center;
+  color: $header-font-color;
+  text-align: $text-align;
   &:after {
     content: "";
     display: table;
     clear: both;
   }
 }
-#titleInput {
+#Input {
   margin: 0;
   border: none;
   border-radius: 0;
-  width: 30%;
   padding: 10px;
   float: left;
-  font-size: 16px;
+  @include listwidth(30%);
+  @include font-size(16px);
+}
+#titleInput {
+  @extend #Input;
 }
 #authorInput {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 30%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
+  @extend #Input;
 }
 .add_btn {
   margin-right: 20px;
@@ -46,8 +45,8 @@
   background: #d9d9d9;
   color: #555;
   float: left;
-  text-align: center;
-  font-size: 16px;
+  text-align: $text-align;
+  @include font-size(16px);
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0;
@@ -55,62 +54,60 @@
     background-color: #bbb;
   }
 }
-.list_div{
-  width: 100%;
-  height: 300px;
-  background-color: black;
-}
 .list_author{
   margin-right:20px;
   border: none;
   border-radius: 0;
-  width: 25%;
+  @include listwidth(25%);
   padding: 10px;
   float: left;
-  font-size: 16px;
+  @include font-size(16px);
   background-color: black;
   color: white;
 }
+
+.list_div{
+  @include listwidth(100%);
+  background-color: black;
+  @include listheight(300px);
+}
+
+.list_name{
+  @include listwidth(100%);
+}
+
 .list_title{
+  @extend .list_author;
   margin-right: 45%;
-  border: none;
-  border-radius: 0;
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding: 10px;
-  float: left;
-  font-size: 30px;
+  @include listwidth(100%);
+  @include font-size(30px);
   vertical-align:middle;
-  text-align:center
+  text-align: $text-align;
 }
+
+
+
 .list_date{
+  @extend .list_author;
   margin-right:20px;
-  border: none;
-  border-radius: 0;
-  width: 25%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-  background-color: black;
-  color: white;
+  @include listwidth(25%);
+  @include font-size(16px);
 }
 .input_field{
   margin: 0px;;
   border: none;
   border-radius: 0;
-  width: 30%;
+  @include listwidth(30%);
   padding: 10px;
   float: left;
-  font-size: 16px;
+  @include font-size(16px);
   color: black;
 }
 .list_ul{
   float: left;
-  width: 98%;
+  @include listwidth(98%);
   color: black;
-  background: #eee;
-  font-size: 18px;
+  @include font-size(18px);
   transition: 0.2s;
 }
 .addBtn {
@@ -120,7 +117,7 @@
   background: #d9d9d9;
   color: #555;
   float: left;
-  text-align: center;
+  text-align: $text-align;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
@@ -133,25 +130,25 @@
   margin: 0;
   border: none;
   border-radius: 0;
-  width: 12%;
+  @include listwidth(12%);
   padding: 10px;
   float: left;
-  font-size: 16px;
+  @include font-size(16px);
 }
 .todoUL{
   margin: 0px;;
   border: none;
   border-radius: 0;
-  width: 100%;
+  @include listwidth(100%);
   padding: 10px;
   float: left;
-  font-size: 16px;
+  @include font-size(16px);
   color: black;
 
 }
 .default_div{
   width: 100%;
-  height: 300px;
+  @include listheight(300px);
   background-color: black;
 }
 .close {
@@ -162,28 +159,6 @@
   &:hover {
     background-color: black;
     color: white;
-  }
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li{
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  background: #eee;
-  font-size: 16px;
-  transition: 0.2s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  &:nth-child(odd){
-    background: #f9f9f9
-  }
-  &:hover{
-    background: #ddd
   }
 }
 

@@ -1,0 +1,20 @@
+/*Mixins*/
+
+@mixin listheight($listheight) {
+
+  height: $listheight;
+}
+
+@mixin listwidth($listwidth){
+
+  width: $listwidth;
+
+}
+
+@mixin font-size($fontsize){
+  font-size: $fontsize;
+}
+
+@mixin title-height($title-height){
+  height: $title-height;
+}
