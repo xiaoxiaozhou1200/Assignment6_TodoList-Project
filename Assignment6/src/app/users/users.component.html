@@ -12,12 +12,14 @@
 </div>
 <div class="default_div" *ngFor="let list of user.list">
   <input class="list_title" value="{{list.title}}">
-  <input class="list_author" value="{{list.author}}">
-  <input class="list_date" value="{{list.date}}">
-  <label>
-    <input class="input_field" [(ngModel)]="list.tempNewTodo" type="text">
-  </label>
-  <button class="add_btn" (click)="addNewItem(list)">Add</button>
+  <div class="list_name">
+    <input class="list_author" value="{{list.author}}">
+    <input class="list_date" value="{{list.date}}">
+    <label>
+      <input class="input_field" [(ngModel)]="list.tempNewTodo" type="text">
+    </label>
+    <button class="add_btn" (click)="addNewItem(list)">Add</button>
+  </div>
   <ul class="todoUL">
     <li *ngFor="let item of list.todo">
       <span class="list_ul">{{item}}</span>

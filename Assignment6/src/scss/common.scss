@@ -1,0 +1,46 @@
+@import "variable";
+@import "mixin";
+
+.title{
+  background-color: $first-title-background-color;
+  width: $first-title-width;
+  color: $first-title-font-color;
+  text-align: $text-align;
+  margin-bottom: $first-title-margin-bottom;
+  
+}
+.firstTitle{
+  @extend .title;
+  @include title-height(100px);
+  margin-top: $first-title-margin-top;
+  padding-top: 50px;
+}
+.secondTitle{
+  @extend .firstTitle;
+  @include title-height(50px);
+  margin-top: 0px;
+  padding-top: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 16px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:nth-child(odd){
+    background: #f9f9f9
+  }
+  &:hover{
+    background: #ddd
+  }
+}
